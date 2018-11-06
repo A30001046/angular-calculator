@@ -1,0 +1,52 @@
+
+<h2>Calc</h2>
+<!--
+<ul class="calculations">
+  <li *ngFor="let calculation of calculations" [class.selected]="calculation === selectedCalculation" (click)="onSelect(calculation)">
+    <span class="badge">{{calculation.id}}</span> {{calculation.operation}}
+  </li>
+</ul>
+
+<div><span>id: </span>{{selectedCalculation.id}}</div>
+<div>
+  <label>value1:
+    <input [(ngModel)]="selectedCalculation.operation" placeholder="name">
+  </label>
+  <label>operation:
+    <input [(ngModel)]="selectedCalculation.operation" placeholder="name">
+  </label>
+  <label>value2:
+    <input [(ngModel)]="selectedCalculation.operation" placeholder="name">
+  </label>
+</div>
+<div>
+<label>result:{{selectedCalculation.operation}} </label>
+  
+</div>
+-->
+
+<form name="calculatorForm">
+<div id="calculator" ng:controller="CalculatorController">
+    <input type="text" name="answer" />
+      <div id="keys">
+      <button onclick="calculatorForm.answer.value += '7'">7</button>
+      <button onclick="calculatorForm.answer.value += '8'">8</button>
+      <button onclick="calculatorForm.answer.value += '9'">9</button>
+      <button onclick="calculatorForm.answer.value += '*'">*</button>
+      <button onclick="calculatorForm.answer.value += '4'">4</button>
+      <button onclick="calculatorForm.answer.value += '5'">5</button>
+      <button onclick="calculatorForm.answer.value += '6'">6</button>
+      <button onclick="calculatorForm.answer.value += '/'">/</button>
+      <button onclick="calculatorForm.answer.value += '3'">3</button>
+      <button onclick="calculatorForm.answer.value += '2'">2</button>
+      <button onclick="calculatorForm.answer.value += '1'">1</button>
+      <button onclick="calculatorForm.answer.value += '+'">+</button>
+      <button ng:click="calculatorForm.answer.value += -">+/-</button>
+      <button ng:click="key('.')">.</button>
+      <button onclick="calculatorForm.answer.value += '0'">0</button>
+      <button onclick="calculatorForm.answer.value += '-'">-</button>
+      <button class="wide" onclick="calculatorForm.answer.value = eval(calculatorForm.answer.value)">=</button>
+      <button class="wide" onclick="calculatorForm.answer.value = ''">C</button>
+    </div>
+  </div>
+    </form>

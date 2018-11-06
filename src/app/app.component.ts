@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'e-centric-innovations-calculator';
+  title = 'E-CENTRIC INNOVATIONS CALCULATOR';
 }
